@@ -1,6 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/lobbyName"
+        android:layout_height="35dp"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_margin="20dp"
+        android:textSize="30dp"
+        android:text="Lobby Name"
+        />
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lobbyName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <TextView
+        android:id="@+id/hostName"
+        android:layout_height="35dp"
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/lobbyName"
+        android:layout_toRightOf="@+id/picture"
+        android:textSize="25dp"
+        android:text="Host Name"
+        />
+
+    <TextView
+        android:id="@+id/player2"
+        android:layout_height="35dp"
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/hostName"
+        android:textSize="25dp"
+        android:text="Player 2 Name"
+        />
+
+    <TextView
+        android:id="@+id/player3"
+        android:layout_height="35dp"
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/player2"
+        android:textSize="25dp"
+        android:text="Player 3 Name"
+        />
+
+    <TextView
+        android:id="@+id/player4"
+        android:layout_height="35dp"
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/player3"
+        android:textSize="25dp"
+        android:text="Player 4 Name"
+        />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_centerHorizontal="true"
+        android:text="Start"
+        android:backgroundTint="@color/babyBlue"
+        android:layout_margin="20dp"
+        android:layout_below="@id/player4"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="295dp" />
+
+
+
+</RelativeLayout>

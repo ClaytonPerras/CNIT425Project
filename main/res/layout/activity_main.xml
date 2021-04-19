@@ -16,11 +16,23 @@
         tools:layout_editor_absoluteX="77dp"
         tools:layout_editor_absoluteY="38dp" />
 
+    <EditText
+        android:id="@+id/playerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:layout_marginBottom="20dp"
+        android:textSize="30dp"
+        android:inputType="textPersonName"
+        android:hint="Enter your name" />
+
     <Button
         android:id="@+id/host"
         android:layout_width="match_parent"
         android:layout_height="65dp"
-        android:layout_below="@+id/logo"
+        android:layout_below="@+id/playerName"
         android:layout_centerHorizontal="true"
         android:text="Host"
         android:backgroundTint="@color/babyBlue"
@@ -33,22 +45,11 @@
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:text="Join"
-        android:backgroundTint="#456fb7"
+        android:backgroundTint="@color/babyBlue"
         android:layout_below="@id/host"
         android:layout_margin="20dp"
         android:layout_centerHorizontal="true"
         tools:layout_editor_absoluteX="160dp"
         tools:layout_editor_absoluteY="295dp" />
 
-    <Button
-        android:id="@+id/stats"
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:layout_centerHorizontal="true"
-        android:text="Stats"
-        android:backgroundTint="#456fb7"
-        android:layout_margin="20dp"
-        android:layout_below="@id/join"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="295dp" />
 </RelativeLayout>

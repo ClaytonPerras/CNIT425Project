@@ -1,6 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/playerImage1"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <Button
+        android:id="@+id/voteP1"
+        android:layout_width="200dp"
+        android:backgroundTint="@color/babyBlue"
+        android:layout_marginBottom="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/playerImage1"
+        android:text="VOTE" />
+
+    <ImageView
+        android:id="@+id/playerImage2"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/playerImage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <Button
+        android:id="@+id/voteP2"
+        android:layout_width="200dp"
+        android:backgroundTint="@color/babyBlue"
+        android:layout_below="@+id/voteP1"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/playerImage2"
+        android:text="VOTE" />
+
+    <ImageView
+        android:id="@+id/playerImage3"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/playerImage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <Button
+        android:id="@+id/voteP3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_below="@+id/voteP2"
+        android:layout_toRightOf="@+id/playerImage3"
+        android:backgroundTint="@color/babyBlue"
+        android:text="VOTE" />
+
+    <ImageView
+        android:id="@+id/playerImage4"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/playerImage3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <Button
+        android:id="@+id/voteP4"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_below="@+id/voteP3"
+        android:layout_toRightOf="@+id/playerImage3"
+        android:backgroundTint="@color/babyBlue"
+        android:text="VOTE" />
+
+</RelativeLayout>
