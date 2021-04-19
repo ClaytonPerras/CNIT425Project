@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lobbyName"
+        android:layout_height="35dp"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_margin="20dp"
+        android:textSize="30dp"
+        android:text="Lobby Name"
+        />
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lobbyName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <TextView
+        android:id="@+id/playerName"
+        android:layout_height="35dp"
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/lobbyName"
+        android:layout_toRightOf="@+id/picture"
+        android:textSize="25dp"
+        android:text="Player Name"
+        />
+
+
+</RelativeLayout>
